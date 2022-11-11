@@ -1,6 +1,6 @@
 {
   "name": "@enymo/react-socket-hook",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "React hook for interacting with a socket.io server",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
