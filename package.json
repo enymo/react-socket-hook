@@ -1,0 +1,40 @@
+{
+  "name": "@enymo/react-socket-hook",
+  "version": "0.0.0",
+  "description": "React hook for interacting with a socket.io server",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "tsup": {
+    "entry": [
+      "src/js/index.ts"
+    ],
+    "format": [
+      "esm",
+      "cjs"
+    ],
+    "dts": true
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.internal.enymo.com/enymo/library/react-socket-hook.git"
+  },
+  "author": "enymo GmbH",
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "@enymo:registry": "https://gitlab.internal.enymo.com/api/v4/projects/85/packages/npm/"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.25",
+    "postcss": "^8.4.17",
+    "tsup": "^6.2.2",
+    "typescript": "^4.7.4"
+  },
+  "peerDependencies": {
+    "socket.io-client": "^4.5.3",
+    "react": ">=17.0.0"
+  }
+}
