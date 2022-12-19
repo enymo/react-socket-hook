@@ -4,6 +4,7 @@ import { Socket } from "socket.io-client";
 const Context = createContext<Socket>(null);
 
 export const SocketProvider = Context.Provider;
+export const useSocketClient = () => useContext(Context);
 export default function useSocket<T>(event: string, handler: (payload: T) => void, dependencies: React.DependencyList = []) {
     const socket = useContext(Context);
 
