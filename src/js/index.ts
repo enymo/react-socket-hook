@@ -5,11 +5,11 @@ const Context = createContext<Socket | null>(null);
 
 export const SocketProvider = Context.Provider;
 export const useSocketClient = () => useContext(Context);
-export default function useSocket<T>(event: string | undefined, handler: (payload: T) => void, dependencies: React.DependencyList = []) {
+export default function useSocket<T>(event: string | null, handler: (payload: T) => void, dependencies: React.DependencyList = []) {
     const socket = useContext(Context);
 
     useEffect(() => {
-        if (event !== undefined) {
+        if (event !== null) {
             socket?.on(event, handler);
             return () => {
                 socket?.off(event, handler);
