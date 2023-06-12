@@ -23,13 +23,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.internal.enymo.com/enymo/library/react-socket-hook.git"
+    "url": "https://github.com/enymo/react-socket-hook.git"
   },
   "author": "enymo GmbH",
-  "license": "UNLICENSED",
-  "publishConfig": {
-    "@enymo:registry": "https://gitlab.internal.enymo.com/api/v4/projects/85/packages/npm/"
-  },
+  "license": "MIT",
   "devDependencies": {
     "@types/react": "^18.0.25",
     "postcss": "^8.4.17",
