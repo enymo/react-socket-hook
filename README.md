@@ -4,6 +4,12 @@ A simple hook providing a declarative syntax for listening to websocket events u
 
 This library was mainly created for use with the [React Resource Hook](https://github.com/enymo/react-resource-hook), but can be used by itself nevertheless.
 
+## Installation
+The library may be installed from npm using
+```
+npm i @enymo/react-socket-hook
+```
+
 ## Usage
 In order to use the ```useSocket``` hook in your components, you app has to be wrapped with the ```SocketProvider``` to configure the hook
 ```
