@@ -1,4 +1,4 @@
-name: Publish Release to NPM
+name: Publish Beta to NPM
 on:
   push:
     tags:
