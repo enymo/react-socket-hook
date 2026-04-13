@@ -24,5 +24,5 @@ export default function useSocket<T>(event: string | null, handler: (payload: T)
                 socket?.off(event, handler);
             }
         }
-    }, [event, ...dependencies]);
+    }, [event, socket, ...dependencies]);
 }

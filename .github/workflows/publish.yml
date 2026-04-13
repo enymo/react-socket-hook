@@ -16,5 +16,5 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - run: npm ci
       - run: npm run build
-      - name: "Publish to NPM"
+      - name: Publish to NPM
         run: if [[ $GITHUB_REF =~ ^refs/tags/v.*-beta$ ]]; then npm publish --access=public --tag=beta; else npm publish --access public; fi
